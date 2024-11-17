@@ -58,7 +58,7 @@ html {
   .myphoto img {
       max-width: 200px;
       border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px -2px #1f2235;
   }
   .myphoto img:hover{
       transform: scale(1.5);
@@ -159,6 +159,8 @@ html {
   .about1 .about-img{
       display: flex;
       margin-left: 90px;
+      border: 3px solid rgb(242, 242, 242);
+      box-shadow: 0 0 20px -2px #1f2235;
             }
   .about1 .about-img img{
       width: 500px;
@@ -167,6 +169,8 @@ html {
        .about-content {
             font-size: 1rem;
             line-height: 1.5;
+            border: 3px solid rgb(242, 242, 242);
+            box-shadow: 0 0 20px -2px #1f2235;
             color: #333;
             padding: 20px;
         }
