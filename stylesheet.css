@@ -215,3 +215,90 @@ html {
         .contactme-about:hover{
             border: 1px solid #000;
         }
+
+        /* project section  */
+        .projects-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .projects-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 90%;
+            margin: 0 auto;
+            max-width: 800px;
+            position: relative;
+            height: 250px; /* Set a fixed height */
+        }
+        
+        .card {
+            flex: 0 0 100%; /* Each card takes up 100% of the width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            margin-top: 30px;
+            text-align: left;
+            opacity: 0; /* Hide by default */
+            transform: translateX(100%); /* Start off-screen */
+            position: absolute; /* Cards are stacked on top of each other */
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #ff5823;
+        }
+        
+        .card p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .card .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff5823;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .card .btn:hover {
+            background-color: #e44d1e;
+        }
+        
+        /* Slideshow Animation */
+        @keyframes slideShow {
+            0%, 33% { opacity: 1; transform: translateX(0); } /* Visible */
+            36%, 100% { opacity: 0; transform: translateX(-100%); } /* Slide out */
+        }
+        
+        .carousel .card:nth-child(1) {
+            animation: slideShow 9s infinite;
+            animation-delay: 0s;
+        }
+        
+        .carousel .card:nth-child(2) {
+            animation: slideShow 9s infinite;
+            animation-delay: 3s; /* Start after the first card */
+        }
+        
+        .carousel .card:nth-child(3) {
+            animation: slideShow 9s infinite;
+            animation-delay: 6s; /* Start after the second card */
+        }
+        
