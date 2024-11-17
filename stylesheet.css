@@ -1,8 +1,10 @@
-/* *{
-      margin: 0;padding: 0;
-      }
-      
-      */
+html {
+      scroll-behavior: smooth; 
+  }
+  section {
+      padding: 100px 20px; /* Adds space around each section */
+      height: 100vh; /* Full screen height for sections */
+  }
 .header {
       display: flex;
       gap: 50%;
@@ -40,3 +42,92 @@
       text-decoration: none;
       color: rgb(255, 255, 255);
 }
+.home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 0;
+      gap: 25%;
+      margin-top: 10%;
+  }
+  
+  .myphoto img {
+      max-width: 200px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content {
+      max-width: 600px;
+  }
+  
+  .content h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #333;
+  }
+  
+  .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      position: relative;
+  }
+  .marquee span {
+      display: inline-block;
+      padding: 0 20px;
+      font-size: 1.2rem;
+      color: #000;
+      animation: marquee 15s linear infinite;
+  }
+  @keyframes marquee {
+      0% {
+          transform: translateX(100%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+  .content p {
+      font-size: 1rem;
+      color: #666;
+      margin: 10px 0 20px;
+  }
+  
+  .btn {
+      display: flex;
+      gap: 10px;
+  }
+  
+  .hire, .contactme {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  .hire {
+      background-color: #ff5823;
+      border-radius: 15%;
+      color: #333;
+  }
+  
+  .hire:hover {
+      border: 1px solid #000;
+  }
+  
+  .contactme {
+     background-color: #666;
+      border-radius: 15%;
+      color: #333;
+  }
+  
+  .contactme:hover {
+      border: 1px solid #000;
+  }
+  
