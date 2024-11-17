@@ -42,6 +42,10 @@ html {
       text-decoration: none;
       color: rgb(255, 255, 255);
 }
+.navbar a:hover{
+      background: linear-gradient(45deg, #f06,#3cf);
+      padding-bottom: 20px;
+}
 .home {
       display: flex;
       align-items: center;
@@ -112,8 +116,9 @@ html {
   
   .hire {
       background-color: #ff5823;
-      border-radius: 15%;
-      color: #333;
+      border-radius:50px;
+      background: linear-gradient(45deg, #f06,#3cf);
+      color: #fff;
   }
   
   .hire:hover {
@@ -122,7 +127,7 @@ html {
   
   .contactme {
      background-color: #666;
-      border-radius: 15%;
+      border-radius: 50px;
       color: #333;
   }
   
