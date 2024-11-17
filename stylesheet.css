@@ -1,0 +1,42 @@
+/* *{
+      margin: 0;padding: 0;
+      }
+      
+      */
+.header {
+      display: flex;
+      gap: 50%;
+      height: 10px;
+      width: 100%;
+      vertical-align: middle;
+      position: fixed;
+      left: 0;
+      padding: 35px 12%;
+      right: 0;
+      top: 0;
+      border: 3px solid rgb(242, 242, 242);
+      background: url('/images/header_background.jpg');
+}
+
+.header .logo {
+      float: left;
+      text-decoration: none;
+      display: flex;      
+      color: rgb(255, 255, 255);
+}
+.header .logo img{
+      height: 20px;
+      width: 20px;
+}
+
+.navbar {
+      display: flex;
+      text-decoration: none;
+      float: right;
+}
+
+.navbar a {
+      padding: 0 15px;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+}
