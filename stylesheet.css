@@ -5,48 +5,53 @@ html {
       padding: 100px 20px; /* Adds space around each section */
       height: 100vh; /* Full screen height for sections */
   }
-.header {
+  .header {
       display: flex;
-      gap: 50%;
-      height: 10px;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
       width: 100%;
-      vertical-align: middle;
       position: fixed;
-      left: 0;
-      padding: 35px 12%;
-      right: 0;
+      padding:10px 0;
       top: 0;
-      border: 3px solid rgb(242, 242, 242);
+      margin: 0;
+      margin-left: -10px;
       background: url('/images/header_background.jpg');
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       z-index: 1000;
-}
-
-.header .logo {
-      float: left;
-      text-decoration: none;
-      display: flex;      
-      color: rgb(255, 255, 255);
-}
-.header .logo img{
-      height: 20px;
-      width: 20px;
-}
-
-.navbar {
+  }
+  
+  .header .logo {
       display: flex;
+      align-items: center;
       text-decoration: none;
-      float: right;
-}
-
-.navbar a {
-      padding: 0 15px;
+      color: #fff;
+  }
+  
+  .header .logo img {
+      height: 30px;
+      width: 30px;
+      margin-left: 10px;
+  }
+  
+  .navbar {
+      display: flex;
+      gap: 10px;
+  }
+  
+  .navbar a {
       text-decoration: none;
-      color: rgb(255, 255, 255);
-}
-.navbar a:hover{
-      background: linear-gradient(45deg, #f06,#3cf);
-      padding-bottom: 20px;
-}
+      color: #fff;
+      font-size: 1rem;
+      padding: 5px 8px;
+      transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+      background: linear-gradient(45deg, #f06, #3cf);
+      color: #fff;
+      border-radius: 5px;
+  }
 .home {
       display: flex;
       align-items: center;
@@ -376,4 +381,183 @@ html {
         .btn-submit:hover {
             background-color: #e44d1e;
         }
+
+        /* Responsive Design */
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+      .header {
+          flex-wrap: wrap;
+          padding: 10px;
+          width: 570px;
+      }
+      .content p {
+            font-size: 3rem;
+            color: #383838;
+            width: 50%;
+            margin-left: 25%;
+        }
+      .header .logo{
+            display: none;
+      }
+      .content {
+            max-width: auto;
+        }
+      .navbar {
+          gap: 10px;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+  
+      .home {
+          flex-direction: column;
+          text-align: center;
+          width: 590px;
+          gap: 20px;
+      }
+  
+      .myphoto img {
+          max-width: 100px;
+      }
+  
+      .content h1 {
+          font-size: 1.8rem;
+      }
+  
+      .content p {
+          font-size: 0.9rem;
+      }
+  
+      .btn {
+          justify-content: center;
+      }
+      .about1 .about-img{
+            display: none;
+      }
+      .about{
+            width: 550px;
+      }
+      #projects{
+            width: 550px;
+      }
+      .contact{
+            width: 550px;
+      }
+      .marquee{
+            width: 400px;
+      }
+      .card {
+            height: 800px;
+      }
+}
+  /* 1024 and below  */
+@media screen and (max-width: 1024px) {
+      .header {
+          flex-wrap: wrap;
+          padding: 10px;
+          width: 1024px;
+      }
+      .content p {
+            font-size: 3rem;
+            color: #383838;
+            width: 50%;
+            margin-left: 25%;
+        }
+      
+      .content {
+            max-width: auto;
+        }
+      .navbar {
+          gap: 10px;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+  
+      .home {
+          flex-direction: column;
+          text-align: center;
+          width: 1024px;
+          gap: 20px;
+      }
+  
+      .myphoto img {
+          max-width: 100px;
+      }
+  
+      .content h1 {
+          font-size: 1.8rem;
+      }
+  
+      .content p {
+          font-size: 0.9rem;
+      }
+  
+      .btn {
+          justify-content: center;
+      }
+      .about1 .about-img{
+            display: none;
+      }
+      .about{
+            width: 970px;
+      }
+      #projects{
+            width: 970px;
+      }
+      .contact{
+            width: 1020px;
+      }
+      div.content{
+            width: 1024px;
+      }
+      .marquee{
+            width: 500px;
+      }
+  }
+  
+  /* Mobile (480px and below) */
+  @media screen and (max-width: 480px) {
+      .header {
+          flex-direction: row;
+          align-items: center;
+      }
+      .header .logo{
+            display: none;
+      }
+      .navbar {
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+      }
+  
+      .home {
+          gap: 15px;
+      }
+      .content p {
+            font-size: 3rem;
+            color: #383838;
+            width: 50%;
+            margin-left: 25%;
+        }
+      .myphoto img {
+          max-width: 150px;
+      }
+  
+      .content h1 {
+          font-size: 1.5rem;
+      }
+  
+      .content p {
+          font-size: 0.8rem;
+      }
+  
+      .btn {
+          flex-direction: column;
+          gap: 10px;
+      }
+  
+      .hire, .contactme {
+          width: 100%;
+      }
+  }
         
