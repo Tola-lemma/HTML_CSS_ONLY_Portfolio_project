@@ -202,4 +202,12 @@ html {
         .highlight-list a:hover {
             color: #005fa3; /* Hover color */
         }
-        
+        .contactme-about{
+            background-color: #ff5823;
+            border-radius:50px;
+            background: linear-gradient(45deg, #f06,#3cf,#f06);
+            color: #fff;
+        }
+        .contactme-about:hover{
+            border: 1px solid #000;
+        }
