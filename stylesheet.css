@@ -150,3 +150,56 @@ html {
       transform: scale(2);
       transition: 0.5s ease-out;
   }
+
+  /* about page  */
+  .about1{
+      display: flex;
+      gap: 5rem;
+  }
+  .about1 .about-img{
+      display: flex;
+      margin-left: 90px;
+            }
+  .about1 .about-img img{
+      width: 500px;
+      height: 450px;
+       }
+       .about-content {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-list {
+            list-style: none; /* Removes default bullet points */
+            padding-left: 0;
+        }
+        
+        .highlight-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; /* Space between list items */
+            font-size: 1rem;
+        }
+        
+        .highlight-list li i {
+            color: #ff5823; /* Icon color */
+            margin-right: 10px; /* Space between icon and text */
+        }
+        
+        .highlight-list a {
+            color: #0077cc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .highlight-list a:hover {
+            color: #005fa3; /* Hover color */
+        }
+        
